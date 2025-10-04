@@ -1,0 +1,4 @@
+#id,mag,place,epochMs,lon,lat,depthKm
+us_sample1,2.5,"10 km NE of Town",1728000000000,12.34,45.67,8.9
+us_sample2,4.1,"Off the coast",1728003600000,-123.12,36.55,12.3
+us_sample3,, "Unknown mag",1728007200000,139.69,35.68,50.0
