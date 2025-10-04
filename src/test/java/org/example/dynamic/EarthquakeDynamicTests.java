@@ -1,5 +1,7 @@
-package org.example;
+package org.example.dynamic;
 
+import org.example.Earthquake;
+import org.example.EarthquakeClient;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;
@@ -43,7 +45,7 @@ public class EarthquakeDynamicTests {
 
                     // Magnitude range (USGS may publish null for some events)
                     assertTrue(Double.isNaN(earthquake.getMagnitude()) || (earthquake.getMagnitude() >= 0 && earthquake.getMagnitude() <= 12),
-                            "magnitude in plausible range or NaN");
+                            "magnitude in plausible range or none");
 
                     // Time within last 65 minutes
                     long ageMinutes = Duration.between(Instant.ofEpochMilli(earthquake.getTimeEpochMs()), Instant.now()).toMinutes();

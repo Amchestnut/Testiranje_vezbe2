@@ -2,7 +2,7 @@ package org.example;
 
 public class Earthquake {
     private final String id;
-    private final double magnitude; // can be NaN if missing
+    private final double magnitude; // can be "none" if missing
     private final String place;
     private final long timeEpochMs; // UNIX epoch millis
     private final double longitude;  // geometry.coordinates[0]
